@@ -1,0 +1,20 @@
+					GIT
+git is the software - run on your local system
+it track your local f1le system - what changes you make - what is the modules change - everything the gut software wil1 read the process
+It will take your file - to the online website called GitHub.
+ you can use the git commend.
+
+GIT HUB website
+- web application run on your cloud.
+storage of your files - who will use
+private repo
+public repo
+local f11 save, and tracking & project demo as a single person.) 
+
+git commend 
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/goestrider250-ctrl/SENTHIL.git     my username 
+git push -u origin main

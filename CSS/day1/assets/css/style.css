@@ -1,0 +1,17 @@
+a {
+    background-color: rgb(148, 84, 84);
+    color: rgb(137, 231, 15);
+    
+}
+.contain {
+    background-color: blueviolet;
+    color: rgb(116, 226, 43);
+}
+.main {
+    background-color: rgb(52, 52, 99);
+    color: rgb(15, 197, 136);
+}
+.class {
+    background-color: rgb(100, 55, 55);
+    color: rgb(65, 36, 92);
+}

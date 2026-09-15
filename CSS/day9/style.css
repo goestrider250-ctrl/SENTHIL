@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+    border-bottom: 1px solid #ddd;
+    background: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e5322d;
+    white-space: nowrap;
+    
+}
+
+.logo > img{
+    height: 150px;
+    width: 130px;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    gap: 25px;
+    margin-left: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #e5322d;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.account a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.account button {
+    background: #e5322d;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.account button:hover {
+    background: #c92723;
+}
+
+.account span {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+.tools {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.tools h1 {
+    font-size: 42px;
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.15;
+}
+
+.tools > p {
+    max-width: 700px;
+    margin: 20px auto 35px;
+    line-height: 1.6;
+    color: #555;
+    font-size: 16px;
+}
+
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.categories button {
+    padding: 10px 17px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.categories button:hover {
+    background: #f2f2f2;
+    border-color: #aaa;
+}
+
+
+.cards {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.card {
+    min-height: 230px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    background: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card .icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #f1f1f1;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.card small {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #e5322d;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+.workflow {
+    grid-column: span 4;
+    padding: 30px;
+    border-radius: 10px;
+    background: #f5f5f5;
+    text-align: left;
+}
+
+.workflow h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.workflow p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.workflow b {
+    color: #e5322d;
+    cursor: pointer;
+}
+
+
+.work {
+    padding: 80px 60px;
+    background: #f7f7f7;
+}
+
+.work > h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.cardimg {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cardimg1 {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.cardimg1:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.cardimg2 {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.cardimg2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardimg1 h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.cardimg1 p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.cardimg1 span {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 22px;
+    color: #e5322d;
+}
+
+/* ================= IMAGE SECTION ================= */
+
+.img1 {
+    max-width: 1200px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.img2 {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img3 h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.img3 p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.img3 button {
+    margin-top: 15px;
+    padding: 13px 22px;
+    border: none;
+    background: #e5322d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img3 button:hover {
+    background: #c92723;
+}
+
+/* ================= TRUST ================= */
+
+.trust {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f7f7f7;
+}
+
+.trust h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.trust > p {
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+    line-height: 1.6;
+}
+
+.security {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.security span {
+    border: 1px solid #ccc;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #222;
+    color: white;
+    padding: 60px 60px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 1.2fr;
+    gap: 35px;
+}
+
+.footer-content h3 {
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.footer-content a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+
+.footer-content a:hover {
+    color: white;
+}
+
+.stores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stores button {
+    padding: 11px;
+    background: #333;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stores button:hover {
+    background: #444;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    color: #aaa;
+    font-size: 13px;
+}

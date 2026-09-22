@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decathlon</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+
+    
+    <header class="w-full">
+
+        
+        <div class="px-8 h-16 flex items-center gap-8">
+
+           <svg viewBox="0 0 188 28" fill="none" xmlns="http://www.w3.org/2000/svg" width="188" aria-hidden="true" data-test-id="header-desktop:decathlon-logo"><path d="M57.5509 23.8H70.7949V19.544H62.5909V15.974H69.8569V12.012H62.5909V8.442H70.7949V4.2H57.5509V23.8ZM87.2309 15.358C85.3129 18.41 83.4509 19.684 81.0569 19.684C77.9489 19.684 76.1429 17.5 76.1429 13.706C76.1429 10.108 77.8089 8.316 80.3709 8.316C82.0649 8.316 83.4649 9.072 83.8989 11.592H88.9389C88.3929 6.79 85.3269 3.808 80.4269 3.808C74.7429 3.808 71.0049 7.82599 71.0049 13.986C71.0049 20.188 74.7429 24.192 80.8889 24.192C84.9069 24.192 87.6369 22.512 89.4429 20.244H96.3169V23.8H101.329V4.2H94.2169L87.2309 15.358ZM96.3169 16.31H91.8789L96.3169 9.1V16.31ZM46.7989 4.2H39.4349V23.8H46.7989C52.6369 23.8 56.4029 19.95 56.4029 14C56.4029 8.05 52.6369 4.2 46.7989 4.2ZM46.7289 19.544H44.4749V8.442H46.7289C49.6409 8.442 51.2789 10.5 51.2789 14C51.2789 17.486 49.6409 19.544 46.7289 19.544ZM159.177 3.808C153.255 3.808 149.279 7.826 149.279 14C149.279 20.174 153.255 24.192 159.177 24.192C165.113 24.192 169.075 20.174 169.075 14C169.075 7.82601 165.113 3.808 159.177 3.808ZM159.177 19.684C156.265 19.684 154.431 17.738 154.431 14C154.431 10.262 156.265 8.316 159.177 8.316C162.103 8.316 163.923 10.262 163.923 14C163.923 17.738 162.103 19.684 159.177 19.684ZM102.589 8.442H107.531V23.8H112.571V8.442H117.513V4.2H102.589L102.589 8.442ZM181.941 4.2V14.994L175.445 4.2H170.223V23.8H175.095V12.558L181.857 23.8H186.813V4.2L181.941 4.2ZM142.139 4.2H137.099V23.8H149.741V19.558H142.139V4.2ZM130.603 11.676H123.813V4.2H118.773V23.8H123.813V15.904H130.603V23.8H135.643V4.2H130.603V11.676Z" fill="#3643BA"></path><path d="M25.2111 0C14.2668 0 0.653107 11.3236 0.653107 20.7085C0.653107 25.5554 4.37614 28 9.29335 28C12.904 28 17.2733 26.6794 21.488 24.1365V5.40893C20.3641 7.33366 15.0816 15.0888 10.8388 19.2193C8.67519 21.3266 6.96119 22.2398 5.48603 22.2398C3.82822 22.2398 3.04147 21.1159 3.04147 19.4441C3.04147 11.8575 15.8122 1.99498 24.2698 1.99498C27.754 1.99498 30.0018 3.54039 30.0018 6.54692C30.0018 9.30055 28.1333 12.7566 24.9441 15.9458V21.7481C30.5076 17.3507 33.8373 11.7451 33.8373 7.22127C33.8373 2.4586 30.1283 0 25.2111 0Z" fill="#3643BA"></path></svg>
+            
+            <div class="flex-1 max-w-[650px]">
+                <div class="h-11 bg-gray-100 rounded-full flex items-center px-6">
+
+                    <span class="text-xl mr-5">⌕</span>
+
+                    <input
+                        type="text"
+                        placeholder='Search for "Badminton Rackets"'
+                        class="bg-transparent outline-none w-full text-sm"
+                    >
+
+                </div>
+            </div>
+
+            
+            <div class="ml-auto flex items-center gap-8 text-sm">
+
+                <div class="text-center cursor-pointer">
+                    <div>♙</div>
+                    <span>Sign In</span>
+                </div>
+
+                <div class="text-center cursor-pointer">
+                    <div>⌂</div>
+                    <span>My Store</span>
+                </div>
+
+                <div class="text-center cursor-pointer">
+                    <div>♧</div>
+                    <span>Support</span>
+                </div>
+
+                <div class="text-center cursor-pointer">
+                    <div>♡</div>
+                    <span>Wishlist</span>
+                </div>
+
+                <div class="text-center cursor-pointer">
+                    <div>🛒</div>
+                    <span>Cart</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+        <div class="px-8 h-10 flex items-center">
+
+            
+            <nav class="flex gap-10 text-sm">
+
+                <a href="#" class="hover:text-blue-600">
+                    All Sports
+                </a>
+
+                <a href="#" class="hover:text-blue-600">
+                    Men
+                </a>
+
+                <a href="#" class="hover:text-blue-600">
+                    Women
+                </a>
+
+                <a href="#" class="hover:text-blue-600">
+                    Kids
+                </a>
+
+            </nav>
+
+
+            
+            <div class="ml-auto text-sm">
+
+                Delivery to
+                <span class="text-blue-700">
+                    Bangalore Central, Bangalore, 560001, Karnataka
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    
+    <main class="px-8 mt-5">
+
+        <div class="relative">
+
+            <img
+                src="assets/image/img1.avif"
+                alt="Banner"
+                class="w-full h-[175px] object-cover"
+            >
+
+          
+           
+        </div>
+
+
+        
+        <div class="grid grid-cols-8 gap-2 mt-8">
+
+            <div>
+                <img
+                    src="assets/image/img2.avif"
+                    class="w-full h-[145px] object-cover rounded"
+                    alt="">
+            </div>
+
+            <div>
+                <img
+                    src="assets/image/img3.avif"
+                    class="w-full h-[145px] object-cover rounded"
+                    alt="">
+            </div>
+
+            <div>
+                <img
+                    src="assets/image/img4.avif"
+                    class="w-full h-[145px] object-cover rounded"
+                    alt="">
+            </div>
+
+            <div>
+                <img
+                    src="assets/image/img5.avif"
+                    class="w-full h-[145px] object-cover rounded"
+                    alt="">
+            </div>
+
+            <div>
+                <img
+                    src="assets/image/img6.avif"
+                    class="w-full h-[145px] object-cover rounded"
+                    alt="">
+            </div>
+
+            <div>
+                <img
+                    src="assets/image/img7.avif"
+                    class="w-full h-[145px] object-cover rounded"
+                    alt="">
+            </div>
+
+            <div>
+                <img
+                    src="assets/image/img8.avif"
+                    class="w-full h-[145px] object-cover rounded"
+                    alt="">
+            </div>
+
+            <div>
+                <img
+                    src="assets/image/img9.avif"
+                    class="w-full h-[145px] object-cover rounded"
+                    alt="">
+            </div>
+
+        </div>
+
+        <main class="px-8 mt-5">
+
+        <div class="relative">
+
+            <img
+                src="assets/image/img10.avif"
+                alt="Banner"
+                class="w-full h-[290px] object-cover">
+         </div>
+
+
+        <div class="flex gap-3">
+
+    <div>
+        <img 
+            src="assets/image/11.avif" 
+            class="h-[145px] object-cover rounded" 
+            alt="">
+    </div>
+
+    <div>
+        <img 
+            src="assets/image/12.avif" 
+            class="h-[145px] object-cover rounded" 
+            alt="">
+    </div>
+
+    <div>
+        <img 
+            src="assets/image/13.avif" 
+            class="h-[145px] object-cover rounded" 
+            alt="">
+    </div>
+
+    <div>
+        <img 
+            src="assets/image/14.avif" 
+            class="h-[145px] object-cover rounded" 
+            alt="">
+    </div>
+
+    <div>
+        <img 
+            src="assets/image/15.avif" 
+            class="h-[145px] object-cover rounded" 
+            alt="">
+    </div>
+
+    <div>
+        <img 
+            src="assets/image/16.avif" 
+            class="h-[145px] object-cover rounded" 
+            alt="">
+    </div>
+
+    <div>
+         
+             <img  src="assets/image/17.avif" 
+            class="h-[145px] object-cover rounded" 
+            alt="">
+    </div>
+
+    <div>
+        
+            <img src="assets/image/18.avif" 
+            class="h-[145px] object-cover rounded" 
+            alt="">
+    </div>
+
+    </div>
+
+    <!-- PRICE SECTION -->
+<div class="mt-8 px-6">
+
+    <h2 class="text-xl font-bold mb-4">
+        Pick what you love, at your price!
+    </h2>
+
+    <div class="grid grid-cols-4 gap-3">
+
+        <div>
+            <img src="assets/image/19.avif"
+                 class="w-full h-[325px] object-cover">
+        </div>
+
+        <div>
+            <img src="assets/image/20.avif"
+                 class="w-full h-[325px] object-cover">
+        </div>
+
+        <div>
+            <img src="assets/image/21.avif"
+                 class="w-full h-[325px] object-cover">
+        </div>
+
+        <div>
+            <img src="assets/image/22.avif"
+                 class="w-full h-[325px] object-cover">
+        </div>
+    </div>
+
+</div>
+
+
+<div class="mt-10 px-8">
+
+    <div class="flex items-center gap-5">
+
+    
+        <div class="w-[190px] shrink-0">
+
+            <p class="text-xl font-semibold text-gray-600">
+                Shop your
+            </p>
+
+            <h2 class="text-4xl font-bold leading-tight">
+                Workout<br>
+                Checklist
+            </h2>
+
+        
+            <div class="flex gap-3 mt-5">
+                <button class="w-10 h-10 border rounded-full text-xl"></button>
+                <button class="w-10 h-10 border rounded-full text-xl"></button>
+            </div>
+
+        </div>
+
+        <div class="w-[215px] shrink-0">
+
+            <img
+                src="assets/image/23.avif"
+                class="w-full h-[215px] object-cover"
+                alt="">
+
+            <p class="font-semibold mt-2">
+                DOMYOS <span class="font-normal">Men Gym Trackpants Slim Fit Jogger...</span>
+            </p>
+
+            <p class="text-orange-500 mt-1">
+                <span class="text-gray-500">5.3k</span>
+            </p>
+
+            <p class="font-bold text-lg">
+                899
+            </p>
+
+            <p class="text-gray-500 text-sm">
+                MRP 1,699
+            </p>
+
+            <div class="flex justify-end gap-2 mt-8">
+
+                <button class="border rounded px-2">
+                    ♡
+                </button>
+
+                <button class="border rounded px-3 py-1">
+                    Add to cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+    
+        <div class="w-[215px] shrink-0">
+
+            <img
+                src="assets/image/24.avif"
+                class="w-full h-[215px] object-cover"
+                alt="">
+
+            <p class="font-semibold mt-2">
+                DOMYOS <span class="font-normal">Men Gym Trackpant Convertible, Jog...</span>
+            </p>
+
+            <p class="text-orange-500 mt-1">
+                 <span class="text-gray-500">8.5k</span>
+            </p>
+
+            <p class="font-bold text-lg">
+                899
+            </p>
+
+            <p class="text-gray-500 text-sm">
+                MRP 999
+            </p>
+
+            <div class="bg-green-100 text-green-600 text-xs
+                        rounded-full px-3 py-1 mt-4 inline-block">
+                
+            </div>
+
+            <div class="flex justify-end gap-2 mt-3">
+
+                <button class="border rounded px-2">
+                    ♡
+                </button>
+
+                <button class="border rounded px-3 py-1">
+                    Add to cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        
+        <div class="w-[215px] shrink-0">
+
+            <img
+                src="assets/image/25.avif"
+                class="w-full h-[215px] object-cover"
+                alt="">
+
+            <p class="font-semibold mt-2">
+                DOMYOS <span class="font-normal">Men Gym Shorts Stretchable, Quick Dry with...</span>
+            </p>
+
+            <p class="text-orange-500 mt-1">
+                <span class="text-gray-500">16.8k</span>
+            </p>
+
+            <p class="font-bold text-lg">
+                599
+            </p>
+
+            <p class="text-gray-500 text-sm">
+                MRP 1,299
+            </p>
+
+            <div class="flex justify-end gap-2 mt-8">
+
+                <button class="border rounded px-2">
+                    ♡
+                </button>
+
+                <button class="border rounded px-3 py-1">
+                    Add to cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        
+        <div class="w-[215px] shrink-0">
+
+            <img
+                src="assets/image/26.avif"
+                class="w-full h-[215px] object-cover"
+                alt="">
+
+            <p class="font-semibold mt-2">
+                DOMYOS <span class="font-normal">Men Gym Shorts, Stretchable, Quick Dry and...</span>
+            </p>
+
+            <p class="text-orange-500 mt-1">
+                <span class="text-gray-500">17.8k</span>
+            </p>
+
+            <p class="font-bold text-lg">
+                399
+            </p>
+
+            <p class="text-gray-500 text-sm">
+                MRP 699
+            </p>
+
+            <div class="flex justify-end gap-2 mt-8">
+
+                <button class="border rounded px-2">
+                    ♡
+                </button>
+
+                <button class="border rounded px-3 py-1">
+                    Add to cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-[#3949b8] text-white px-10 pt-5 pb-3 mt-12">
+
+    <div class="grid grid-cols-4 gap-10">
+
+        <!-- COLUMN 1 -->
+        <div>
+
+            <p class="text-xl mb-5">
+                Download the app
+            </p>
+
+            <p class="text-xl mb-8">
+                Become a member
+            </p>
+
+            <!-- SOCIAL ICONS -->
+            <div class="flex gap-4">
+
+                <div class="w-10 h-10 border border-white rounded-full
+                            flex items-center justify-center">
+                    f
+                </div>
+
+                <div class="w-10 h-10 border border-white rounded-full
+                            flex items-center justify-center">
+                    𝕏
+                </div>
+
+                <div class="w-10 h-10 border border-white rounded-full
+                            flex items-center justify-center">
+                    ▶
+                </div>
+
+                <div class="w-10 h-10 border border-white rounded-full
+                            flex items-center justify-center">
+                    ◎
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICES -->
+        <div>
+
+            <h3 class="font-bold mb-5">
+                SERVICES
+            </h3>
+
+            <div class="space-y-2 text-[17px]">
+
+                <p>Decathlon for Schools</p>
+                <p>Decathlon for Corporates</p>
+                <p>Decathlon for Sport Clubs</p>
+                <p>Giftcard</p>
+                <p>Affiliate Program</p>
+                <p>Playo Summer</p>
+                <p>Second life</p>
+                <p>Buy back</p>
+                <p>Installation & assembly</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- HELP -->
+        <div>
+
+            <h3 class="font-bold mb-5">
+                HELP
+            </h3>
+
+            <div class="space-y-2 text-[17px]">
+
+                <p>Find a store</p>
+                <p>Return Policy</p>
+                <p>Shipping policy</p>
+                <p>Sitemap</p>
+                <p>Product recall</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ABOUT -->
+        <div>
+
+            <h3 class="font-bold mb-5">
+                ABOUT
+            </h3>
+
+            <div class="space-y-2 text-[17px]">
+
+                <p>About us</p>
+                <p>Made In India</p>
+                <p>Social & CSR Initiatives</p>
+                <p>Careers</p>
+                <p>Blog</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DECATHLON LOGO -->
+    <div class="mt-7">
+
+        <div class="flex items-center gap-2 text-2xl font-bold">
+
+            <span class="text-3xl">◒</span>
+            DECATHLON
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM -->
+    <div class="mt-5 flex items-center justify-between">
+
+        <div class="flex gap-10 text-sm">
+
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+
+        </div>
+
+
+        <div class="text-sm">
+            🇮🇳 India　⌄
+        </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="text-right text-sm mt-5">
+
+        © 2026 Decathlon Sports India Pvt Ltd. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+    </main>
+
+</body>
+</html>

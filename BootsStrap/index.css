@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #55035a, #fce8cf);
+    color: white;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 20px 30px;
+    background: #f8f6f2;
+    border-radius: 20px;
+}
+
+.logo {
+    color: #242033;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #7775d8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.heading h1 {
+    display: inline-block;
+    padding: 16px 30px;
+    border-radius: 50px;
+    background: #f8f6f2;
+    color: #7775d8;
+    font-size: 32px;
+}
+
+.heading p {
+    margin-top: 15px;
+    color: white;
+}
+
+.task-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.task-card {
+    position: relative;
+    min-height: 300px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #29213c;
+    border: 1px solid white;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.75);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.task-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.number {
+    color: #55035a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    font-size: 35px;
+}
+
+.task-card h2 {
+    margin-top: 22px;
+    font-size: 24px;
+}
+
+.bottom {
+    margin-top: auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.tag {
+    padding: 8px 12px;
+    background: white;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.explore {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer {
+    padding: 35px 10px;
+    text-align: center;
+    color: #55035a;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .task-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        margin: 15px;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+    .heading h1 {
+        font-size: 23px;
+    }
+
+    .task-container {
+        grid-template-columns: 1fr;
+    }
+}

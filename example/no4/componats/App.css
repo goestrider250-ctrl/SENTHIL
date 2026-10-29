@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+nav a {
+  color: white;
+}
+
+.banner {
+  text-align: center;
+  padding: 30px;
+  background: lightblue;
+}
+
+.banner img {
+  width: 400px;
+}
